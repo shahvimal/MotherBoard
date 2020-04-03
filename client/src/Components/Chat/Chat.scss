@@ -1,0 +1,50 @@
+#chatBody{
+    flex:0.79;
+    display:flex;
+    flex-direction: row;
+    overflow:hidden;
+}
+#chatSect{
+    flex:0.67;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    position:relative;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.listStud{
+    flex:0.33;
+    min-width:250px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    button{
+        outline:none;
+    }
+}
+@media (max-width:950px){
+    #chatBody{
+        flex:1;
+    }
+    #chatSect{
+        flex:0.67;
+    }
+    #listStud{
+        flex:0.33;
+    }
+}
+@media (max-width:600px){
+    #chatBody{
+        #chatSect{
+            flex:1;
+        }
+        .listStud{
+            position:fixed;
+            height:100%;
+            right:0;
+            z-index:101;
+            transform: translateX(250px);
+            transition: transform 0.3s ease-out ;
+        }
+        .show{
+            transform: translateX(0px);
+        }
+    }
+}

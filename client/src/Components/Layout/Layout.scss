@@ -1,0 +1,25 @@
+#layoutBody{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+    position:relative;
+}
+.navigator{ 
+    flex:0.21;
+    min-width:288px;
+    background: transparent linear-gradient(0deg, #262A36 0%, #6E7078 100%) 0% 0% no-repeat padding-box;
+}
+@media (max-width:950px){
+    .navigator{
+        position:fixed;
+        width:289px;
+        left:0;
+        height:100%;
+        transform: translateX(-400px);
+        transition: transform 0.3s ease-out ;
+        z-index:999;
+    }
+    .show{
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,16 @@
+.chat{
+    background-color: blue;
+    padding: 2vh;
+    flex: 1;
+    /* width: 200vh; */
+    /* max-width:5000px; */
+    /* height:100%; */
+    
+}
+
+@media (max-width:917px)
+{
+    .chat{
+        flex: 1;
+    }
+}

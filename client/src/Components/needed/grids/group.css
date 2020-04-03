@@ -1,0 +1,15 @@
+.group{
+    background-color: red;
+    padding: 2vh;
+    flex: 0.4;
+    /* width:400px; */
+    /* height:100%; */
+}
+
+@media (max-width:917px)
+{
+    .group{
+        flex: 0.7;
+    }
+}
+

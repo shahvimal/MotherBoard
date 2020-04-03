@@ -1,0 +1,146 @@
+.login{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../images/webDev.png) no-repeat center center fixed ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* width:100vw; */
+}
+
+
+.top{
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 0;
+ text-align: center;   
+}
+
+.paper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.63);
+    width:500px;
+    border-radius: 10px;
+    //  opacity: 0.1; 
+}
+
+.heads{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 40px;
+    /* flex:1 ; */
+    color: #414195;
+    text-align: center; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px ;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.text{
+    
+    box-sizing: border-box;
+    width:calc(100%);
+    /* overflow: auto;    */
+    /* overflow: hidden;  */
+     
+}
+
+.button{
+margin-top: 15px;
+width:100%;
+padding: 20px;
+background:#414195 ;
+margin-bottom: 18px;
+border-radius: 5px;
+font-size: 18px;
+border: none;
+color: white;
+cursor: pointer;
+outline: none;
+}
+
+.button:active , .button:hover{
+    background-color: #393985;
+    transition: background-color 0.3s ;
+}
+
+
+.form  span h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #171736;
+}
+
+a{
+    text-decoration: none;
+    color: #171736;
+}
+
+.form span h4 a:hover , .form  span h4 a:active{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.error1{
+    /* height:2vh; */
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(212, 154, 154);
+    color:rgb(116, 19, 19);
+    border-radius: 0.5vh;
+    display: none;
+}
+
+.error2{
+    /* height:2vh; */
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(212, 154, 154);
+    color:rgb(116, 19, 19);
+    border-radius: 0.5vh;
+    display: none;
+}
+
+@media (max-width:600px)
+{
+    .paper{
+        /* flex: 1; */
+        width:calc(100% - 30px);
+        /* height: 20px;    */
+        }
+    .text{
+        width:calc(100%);
+    }
+    .button{
+        width:100%;
+        /* font-size: inherit; */
+    }
+
+    .heads{
+        font-size: 4vh;
+    }
+
+    .form  span h4{
+        margin: 0;
+        padding: 0;
+        font-size: 2vh;
+        text-align: center;
+        color: #171736;
+    }
+}
